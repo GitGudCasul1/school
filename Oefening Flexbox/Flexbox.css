@@ -1,0 +1,59 @@
+/*oefening 1*/
+.flex-container{
+    display: flex;
+    background-color: steelblue;
+    flex-direction: row-reverse;
+}
+
+.flex-container div{
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/*oefening 2*/
+.space-around-container{
+    display: flex;
+    background-color: steelblue;
+    justify-content: space-around;
+}
+
+.space-around-container div{
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*oefening 3*/
+.vertical-center-container{
+    display: flex;
+    background-color: steelblue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vertical-center-container div{
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*oefening 4*/
+.wrap-container{
+    display: flex;
+    background-color: steelblue;
+    flex-wrap: wrap;
+}
+
+.wrap-container div{
+    background-color: whitesmoke;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>004</title>
+
+    <style>        
+        
+        /*oefening 1*/
+        #oefening1{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: relative;
+            transition: transform 4s;
+            animation-name: oefening1;
+            animation-duration: 4s;
+        }
+        
+        @keyframes oefening1{
+            0%{left: 0%; top: 0%;}
+            50%{left: 50%; top: 5%;}
+            100%{left: 0%; top: 0%;}
+        }
+        
+        /*oefening 2*/
+        img{
+            width: 500px;
+            position: relative;
+            transition: transform 4s;
+            animation-name: oefening2;
+            animation-duration: 4s;
+        }
+        
+        @keyframes oefening2{
+            0%{left: 0%; top: 0%;}
+            50%{left: 50%; top: 5%;}
+            50%{transform: rotateY(180deg);}
+            100%{left: 0%; top: 0%;}            
+            100%{transform: rotateZ(180deg);}
+        }
+        
+        /*oefening 3*/
+        #oefening3{
+            background-image: url(fotos/004/jah%20jah%20binks.jpeg);
+            background-size: 100% 100%;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            position: relative;
+            transition: transform 4s;
+            animation-name: oefening3;
+            animation-duration: 4s;
+            
+        }
+        
+        @keyframes oefening3{
+            0%{background-image: url(fotos/004/jah%20jah%20binks.jpeg);}
+            25%{opacity: 0.5;}
+            50%{background-image: url(fotos/004/jahcoon.jpeg);}
+            75%{opacity: 0.5;}
+            100%{background-image: url(fotos/004/taco%20cat.jpg);}
+            
+        }
+        
+        
+    </style>
+    
+</head>
+
+    
+<body>  
+    
+    <div id="oefening1"></div>    
+    <br>
+    
+    <img src="fotos/004/GooseSif.png"/>
+    <br>
+    
+    <div id="oefening3"></div>
+    
+</body>
+
+</html>

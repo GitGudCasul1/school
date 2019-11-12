@@ -1,0 +1,179 @@
+/*NAVBAR*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: whitesmoke;
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+ul.horizontal {
+    position: fixed;
+    top: 10;
+    width: 100%;
+}
+
+/*start dropdown*/
+li a,
+.dropbtn {
+    display: block;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: dimgray;
+    color: white;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    box-shadow: 3px 3px lightgray;
+    background-color: dimgray;
+    color: white;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    background-color: dimgray;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:link {
+    background-color: dimgray;
+    color: white;
+}
+
+.dropdown-content a:visited {
+    background-color: dimgray;
+    color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: limegreen;
+}
+
+.dropdown-content a.active {
+    background-color: limegreen;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*end dropdown*/
+
+a:link {
+    background-color: whitesmoke;
+    color: black;
+}
+
+a:visited {
+    background-color: whitesmoke;
+    color: black;
+}
+
+a:hover {
+    
+}
+
+a.active {
+    background-color: limegreen;
+    color: white;
+}
+
+img {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 20%;
+}
+
+/*BANDS*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: lightskyblue;
+    color: blue;
+}
+
+tr:nth-child(even) {
+    background-color: darkgray;
+}
+
+/*PICTURES*/
+.row img {
+    width: 400px;
+    border-radius: 25px;
+    transition: transform 3s;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+}
+
+.row img:hover{
+    transform: rotateX(50deg) rotateY(20deg)scale(0.85, 0.85);
+}
+
+.column a{
+    transition-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    0% {left: 0px; bottom: 0px;}
+    50%{left: 0px; bottom: -550px;}
+    100% {left: 0px; bottom: 0px;}
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33%;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+div.column {
+    border-style: solid
+}
+
+/*COUNTER*/
+body{
+    counter-reset: titel;
+}
+
+h2::before{
+    counter-increment: titel;
+    content: "Titel " counter(titel) ": ";
+}
+
+/*GRADIENT*/
+#grad{
+    background-image: linear-gradient(to right, indianred, lightgreen, lightblue);
+}
